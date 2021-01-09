@@ -47,7 +47,6 @@ export default class Calculator extends Component {
         values,
       });
     }
-    console.log(this.state.operation);
   }
 
   clearMemory() {
@@ -75,7 +74,6 @@ export default class Calculator extends Component {
       const values = [...this.state.values];
       values[i] = newValue;
       this.setState({ values });
-      console.log(values);
     }
     return false;
   }
